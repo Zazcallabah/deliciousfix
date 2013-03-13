@@ -1,0 +1,12 @@
+{
+ "name": "Fix Delicious",
+"description": "Replaces the redirect urls in delicious with direct urls and removes the target=_blank property from links.",
+   "version": "1.0.0",
+ "manifest_version": 2,
+"content_scripts": [
+    {
+      "matches": ["https://delicious.com/*"],
+      "js": [ "jquery-1.9.1.min.js","del.js"]
+    }
+  ]
+}
